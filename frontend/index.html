@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mini URL Shortener</h1>
+      <p>Paste your long URL below and get a short one instantly!</p>
+    </header>
+
+    <main>
+      <div class="url-input-container">
+        <input type="url" id="longUrl" placeholder="Enter your long URL here..." required>
+        <button id="shortenBtn">Shorten URL</button>
+      </div>
+
+      <div class="result-container" style="display:none;">
+        <h3>Your Shortened URL:</h3>
+        <div class="shortened-url-box">
+          <input type="text" id="shortUrl" readonly>
+          <button id="copyBtn" title="Copy to clipboard">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+        <p>
+          Open: <a id="shortUrlLink" href="#" target="_blank">Your Short URL</a>
+        </p>
+        <div class="stats">
+          <p>Total Clicks: <span id="clickCount">0</span></p>
+          <p>Created: <span id="createdAt">-</span></p>
+        </div>
+      </div>
+
+      <div class="loading" style="display:none;">
+        <div class="spinner"></div>
+        <p>Shortening URL...</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>BACK 2 BACK mini Projects ayenge ab (●'◡'●)👍</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

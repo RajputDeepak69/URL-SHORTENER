@@ -1,0 +1,15 @@
+# Node dependencies
+node_modules/
+package-lock.json
+
+# Build/Deploy Artifacts
+*.zip
+
+# AWS Configs
+.aws/
+*.tfstate
+*.tfstate.backup
+
+# OS files
+.DS_Store
+Thumbs.db
