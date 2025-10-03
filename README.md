@@ -55,25 +55,6 @@ This project is designed to be **student-proof** against surprise AWS bills:
 
 ---
 
-## 📂 Project Structure
-MINI-URL/
-├── frontend/
-│ ├── index.html # main UI
-│ ├── css/style.css # styles
-│ └── js/main.js # logic connecting UI ⇆ Lambda
-│
-├── backend/
-│ ├── lambda/
-│ │ ├── create-url/ # Lambda to generate short code
-│ │ │ └── index.js
-│ │ ├── redirect-url/ # Lambda to redirect visitors
-│ │ │ └── index.js
-│ │ └── get-stats/ # Lambda for analytics
-│ │ └── index.js
-│ └── .gitignore # ignoring node_modules, zips, etc.
-│
-└── README.md # this epic documentation
-
 ---
 
 ## 🔥 How It Works (Step by Step)
@@ -130,15 +111,7 @@ Mistakes, shortcuts, or security trade-offs **are intentional to accelerate my l
 Please feel free to suggest patches or improvements! I want feedback 👂.  
 
 ---
-
-## 📈 Future Roadmap
-
-- [ ] Host frontend as static site in S3 + CloudFront  
-- [ ] Add custom domain (like `dpak.ly/xxxx`)  
-- [ ] Add Auth using Cognito (so users have accounts/login)  
-- [ ] CI/CD with GitHub Actions (infrastructure-as-code + auto deploy)  
-- [ ] Refactor backend with Terraform IaC  
-- [ ] Add monitoring (CloudWatch dashboards, alerts)  
+  
 
 ---
 
